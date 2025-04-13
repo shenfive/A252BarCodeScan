@@ -16,20 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvD-EO-1rc">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvD-EO-1rc">
                                 <rect key="frame" x="30" y="162" width="333" height="333"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="IvD-EO-1rc" secondAttribute="height" multiplier="1:1" id="n9U-Bh-KRo"/>
+                                    <constraint firstAttribute="width" secondItem="IvD-EO-1rc" secondAttribute="height" multiplier="1:1" id="NXm-0s-clQ"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG7-5l-Tuf">
-                                <rect key="frame" x="159" y="535" width="75" height="35"/>
+                                <rect key="frame" x="155.66666666666666" y="535" width="82" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ReScan"/>
+                                <connections>
+                                    <action selector="reScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qam-Ey-8d2"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dskjfkaljsdf;kljas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7h-68-2I6">
-                                <rect key="frame" x="134.33333333333334" y="600" width="124.66666666666666" height="20.333333333333371"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7h-68-2I6">
+                                <rect key="frame" x="196.66666666666666" y="600" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,6 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="outputLabel" destination="d7h-68-2I6" id="olB-ap-1lI"/>
+                        <outlet property="reScanButton" destination="RG7-5l-Tuf" id="11y-eB-2HM"/>
                         <outlet property="videoPreview" destination="IvD-EO-1rc" id="Gmg-kZ-wEe"/>
                     </connections>
                 </viewController>
